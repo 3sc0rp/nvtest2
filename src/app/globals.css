@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --nv-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+/* Subtle Kurdish rug border option */
+.nv-rug-border {
+  background-image: linear-gradient(90deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 10%), url('/images/kurdish-pattern.png');
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
+
+.section {
+  @apply py-14 md:py-20;
+}
+.card {
+  @apply bg-white rounded-2xl shadow-lg overflow-hidden border border-olive/10;
+}
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold transition;
+}
+.btn-primary { @apply bg-terracotta text-white hover:opacity-90; }
+.btn-secondary { @apply bg-sand text-dark hover:opacity-90; }
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
